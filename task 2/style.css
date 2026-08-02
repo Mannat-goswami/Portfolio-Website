@@ -1,0 +1,165 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+    background:#f4f4f4;
+    display:flex;
+    justify-content:center;
+    align-items:flex-start;
+    min-height:100vh;
+    padding:40px;
+}
+
+.container{
+    width:100%;
+    max-width:700px;
+    background:white;
+    padding:30px;
+    border-radius:12px;
+    box-shadow:0 5px 15px rgba(0,0,0,.2);
+}
+
+h1{
+    text-align:center;
+    margin-bottom:25px;
+    color:#333;
+}
+
+.task-input{
+    display:flex;
+    gap:10px;
+    margin-bottom:25px;
+}
+
+.task-input input{
+    flex:1;
+    padding:12px;
+    font-size:16px;
+    border:1px solid #ccc;
+    border-radius:8px;
+}
+
+.task-input button{
+    padding:12px 20px;
+    border:none;
+    background:#0077ff;
+    color:white;
+    border-radius:8px;
+    cursor:pointer;
+}
+
+.task-input button:hover{
+    background:#005ecc;
+}
+
+.stats{
+    display:flex;
+    justify-content:space-between;
+    background:#eef3ff;
+    padding:15px;
+    border-radius:8px;
+    margin-bottom:25px;
+}
+
+.stats p{
+    font-weight:bold;
+}
+
+#taskList{
+    list-style:none;
+}
+
+.task-item{
+    background:#f7f7f7;
+    padding:15px;
+    border-radius:8px;
+    margin-bottom:15px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+.task-text{
+    font-size:17px;
+    font-weight:bold;
+}
+
+.completed{
+    text-decoration:line-through;
+    color:gray;
+}
+
+.task-buttons{
+    display:flex;
+    gap:8px;
+}
+
+.task-buttons button{
+    border:none;
+    padding:8px 12px;
+    color:white;
+    border-radius:5px;
+    cursor:pointer;
+}
+
+.complete-btn{
+    background:green;
+}
+
+.edit-btn{
+    background:orange;
+}
+
+.delete-btn{
+    background:crimson;
+}
+
+.bottom-buttons{
+    margin-top:25px;
+}
+
+#clearCompleted{
+    width:100%;
+    padding:12px;
+    border:none;
+    background:crimson;
+    color:white;
+    border-radius:8px;
+    cursor:pointer;
+}
+
+#clearCompleted:hover{
+    background:darkred;
+}
+
+@media(max-width:768px){
+
+    .task-input{
+        flex-direction:column;
+    }
+
+    .stats{
+        flex-direction:column;
+        gap:10px;
+        text-align:center;
+    }
+
+    .task-item{
+        flex-direction:column;
+        align-items:flex-start;
+        gap:15px;
+    }
+
+    .task-buttons{
+        width:100%;
+    }
+
+    .task-buttons button{
+        flex:1;
+    }
+
+}
