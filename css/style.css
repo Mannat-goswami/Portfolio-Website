@@ -1,124 +1,122 @@
+/* ===========================
+   Global
+=========================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:Arial, Helvetica, sans-serif;
+    background:#ffffff;
+    color:#222;
+    line-height:1.6;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+/* ===========================
+   Navbar
+=========================== */
+
 nav{
-    background-color: black;
-    padding: 20px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    background:black;
+    padding:20px 10%;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
 }
 
 nav h2{
-    color: white;
+    color:white;
+    font-size:32px;
 }
 
 nav h2:hover{
-    color: brown;
+    color:brown;
 }
 
 nav ul{
-    display: flex;
-    gap: 30px;
-    list-style: none;
+    display:flex;
+    gap:30px;
+    list-style:none;
 }
 
 nav a{
-    color: rgb(35, 124, 99);
-    text-decoration: none;
+    color:rgb(35,124,99);
+    text-decoration:none;
+    font-weight:bold;
+    transition:.3s;
 }
 
 nav a:hover{
-    color: yellow;
-}
-.hero{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 80px 10%;
+    color:yellow;
 }
 
-.hero-content{
-    max-width: 600px;
-}
+/* ===========================
+   About
+=========================== */
 
-.hero-content h1{
-    font-size: 48px;
-    margin-bottom: 20px;
-}
-
-.hero-content p{
-    font-size: 20px;
-    margin-bottom: 30px;
-}
-
-.hero-image img{
-    width: 350px;
-    border-radius: 50%;
-}
-
-.btn{
-    display: inline-block;
-    background: #0077ff;
-    color: white;
-    padding: 12px 25px;
-    text-decoration: none;
-    border-radius: 8px;
-    transition: 0.3s;
-}
-
-.btn:hover{
-    background: #005ecc;
-}
 .about{
-    padding: 80px 10%;
-    text-align: center;
+    padding:80px 10%;
+    text-align:center;
 }
 
 .about h2{
-    font-size: 40px;
-    margin-bottom: 20px;
+    font-size:40px;
+    margin-bottom:25px;
 }
 
 .about p{
-    max-width: 800px;
-    margin: auto;
-    font-size: 18px;
-    line-height: 1.8;
+    max-width:800px;
+    margin:auto;
+    font-size:18px;
+    line-height:1.8;
 }
+
+/* ===========================
+   Skills
+=========================== */
+
 .skills{
-    padding: 80px 10%;
-    text-align: center;
+    padding:80px 10%;
+    text-align:center;
 }
 
 .skills h2{
-    font-size: 40px;
-    margin-bottom: 40px;
+    font-size:40px;
+    margin-bottom:40px;
 }
 
 .skills-container{
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 20px;
-    .project-card{
-    text-decoration: none;
-    color: inherit;
-    display: block;
-}
-
+    display:flex;
+    justify-content:center;
+    flex-wrap:wrap;
+    gap:20px;
 }
 
 .skill-card{
-    background: #0077ff;
-    color: white;
-    padding: 20px 40px;
-    border-radius: 10px;
-    font-weight: bold;
-    transition: 0.3s;
+    background:#0077ff;
+    color:white;
+    padding:20px 40px;
+    border-radius:10px;
+    font-weight:bold;
+    transition:.3s;
 }
 
 .skill-card:hover{
-    transform: translateY(-5px);
-    background: #005ecc;
+    transform:translateY(-6px);
+    background:#005ecc;
 }
+
+/* ===========================
+   Projects
+=========================== */
+
 .projects{
     padding:80px 10%;
     text-align:center;
@@ -137,17 +135,38 @@ nav a:hover{
 }
 
 .project-card{
-    width:300px;
+    display:block;
+    width:320px;
     padding:25px;
     border-radius:12px;
     background:#f5f5f5;
     box-shadow:0 4px 10px rgba(0,0,0,.1);
+
+    text-decoration:none;
+    color:inherit;
+
     transition:.3s;
 }
 
 .project-card:hover{
     transform:translateY(-8px);
+    box-shadow:0 8px 20px rgba(0,0,0,.2);
 }
+
+.project-card h3{
+    color:#0077ff;
+    margin-bottom:15px;
+}
+
+.project-card p{
+    color:#333;
+    line-height:1.6;
+}
+
+/* ===========================
+   Contact
+=========================== */
+
 .contact{
     padding:80px 10%;
     text-align:center;
@@ -155,13 +174,27 @@ nav a:hover{
 
 .contact h2{
     font-size:40px;
-    margin-bottom:25px;
+    margin-bottom:30px;
 }
 
 .contact p{
     margin:15px 0;
     font-size:18px;
 }
+
+.contact a{
+    color:#0077ff;
+    text-decoration:none;
+}
+
+.contact a:hover{
+    text-decoration:underline;
+}
+
+/* ===========================
+   Footer
+=========================== */
+
 footer{
     background:black;
     color:white;
@@ -169,4 +202,3 @@ footer{
     padding:20px;
     margin-top:50px;
 }
-
